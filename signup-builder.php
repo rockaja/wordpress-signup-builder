@@ -26,7 +26,9 @@ define('SB_PLUGIN_DIR', dirname(__FILE__));
 //Include the files including the Install, Update and Delete Functions
 include_once(dirname(__FILE__) .  "/signup-builder-actions.php");
 include_once(dirname(__FILE__) .  "/signup-builder-functions.php");
-include_once(dirname(__FILE__) .  "/signup-builder-p.php");
+if (file_exists(dirname(__FILE__) .  "/signup-builder-p.php") ){
+	include_once(dirname(__FILE__) .  "/signup-builder-p.php");
+}
 include_once(dirname(__FILE__) .  "/signup-builder-dashboard-widget.php");
 include_once(dirname(__FILE__) .  "/signup-builder-sc.php");
 

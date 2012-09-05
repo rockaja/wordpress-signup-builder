@@ -3,12 +3,12 @@ Contributors: rockaja
 Donate link: http://fb-520.com/
 Tags: signup, registration, login, signon
 Requires at least: 2.0.2
-Tested up to: 2.1
-Stable tag: 4.3
+Tested up to: 3.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Use this plugin to build customised signup forms
 
 == Description ==
 
@@ -39,8 +39,6 @@ This version fixes a security related bug.  Upgrade immediately.
 
 == A brief Markdown Example ==
 
-Ordered list:
-
 * Customisable floating signup menu
 * Choose out of 2 signup architectures
 * Customise custom fields
@@ -49,6 +47,6 @@ Ordered list:
 * Customisable email and activation messages
 
 
-Here's a link to [fb-520.com](http://fb-520.com/ "Social media made easy") .
+By Ola Apata [fb-520.com](http://fb-520.com/ "Social Media made easy") .
 
 `<?php code(); // goes in backticks ?>`
