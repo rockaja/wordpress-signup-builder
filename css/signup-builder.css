@@ -1,0 +1,181 @@
+
+.myform{
+margin:0 auto;
+width:100%;
+padding:0;
+}
+
+/* ----------- floating menu ----------- */
+div.floating-menu_line {
+position:fixed;background:#999;top:0px;
+border-left:1px solid #000;
+border-top:0 solid #000;
+border-right:1px solid #000;
+border-bottom:1px solid #000;
+width:auto;z-index:1500; margin:5px; text-align:center;font-family:Verdana, Geneva, sans-serif;line-height:18px;font-size:12px;}
+
+
+div.floating-menu {
+position:fixed;
+top:0px;
+background:#999;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+width:auto;
+z-index:1500; 
+margin:5px; 
+text-align:center;
+font-family:Verdana, Geneva, sans-serif;
+line-height:18px;
+font-size:12px;
+behavior: url(/wp-content/plugins/signup-builder/css/border-radius.htc);
+}
+div.floating-menu, div.floating-menu {display:block;padding:10px;font-family:Verdana, Geneva, sans-serif;;}
+
+/* ----------- stylized ----------- */
+
+#stylized .sb_error{clear:both; border: 0 solid #a60000;color: #a60000;line-height:20px; text-align:left; width: 100%;font-size:12px;}
+
+
+#stylized{
+border-left:solid 0 #ccc;
+border-right:solid 0 #eee;
+border-top:solid 0 #ccc;
+border-bottom:solid 0 #eee;
+}
+#stylized h1 {
+font-weight:normal;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #ccc;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:normal;
+text-align:right;
+width:140px;
+float:left;
+line-height:18px;
+}
+/*
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+*/
+#stylized .small{
+/*color:#ccc;*/
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #999;
+width:200px;
+height:20px;
+line-height:18px;
+margin:2px 0 20px 10px;
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#stylized select{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+#stylized textarea{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;height:100px;
+margin:2px 0 20px 10px;
+line-height:23px;
+}
+      
+label em {        
+float:left;               
+font-style: normal;
+color:#C00;
+font-size:200%;              
+}
+ 
+
+#stylized input[type="button"] 
+{
+float:left;
+font-size:12px;
+border:solid 1px #999;
+background:#ccc;
+height:25px;
+width:200px;
+margin:0;padding:0;
+margin-left:10px;
+}
+#stylized .field{
+	height:inherit;width:100%;clear:both;border:0 solid red;
+}
+#stylized .field em{
+	color: red;
+}
+.sb_success{border:1px solid green;}
+
+.full_url{width:300px;}
+.updated{border:1px solid #ccc; background:#FFC;font-size:1opx;height:25px;line-height:25px;width:94%;}
+.msg_updated{width:100%;height:25px;line-height:25pxborder:1px solid #999;color:#999;}
+/*
+
+
+a {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00CCFF;
+}
+*/
+.highlight {background-color:#FF9D9D;border-bottom:#F30 1px solid;border-top:#F30 1px solid;padding: 4px 10px}
+
+/***** Main Layout ****/
+#container {
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;/* IE fix to center the page */
+}
+
+div .widget-title{height:30px;}
+
+#content {
+  	width: 740px;
+  	margin: 0 auto;/* center the page in Firefox */
+  	text-align: left;
+	padding: 20px;
+}
+.form_link{
+	font-size:12px;
+}
+.form_link a{
+	font-size:12px;
+	font-family:Verdana, Geneva, sans-serif;
+	cursor:pointer;
+}
+input[type="text"] 
+{
+height:23px;
+line-height:23px;
+}
+#main_body{{font-family:Verdana, Geneva, sans-serif;}
