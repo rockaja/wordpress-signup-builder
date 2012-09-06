@@ -122,9 +122,35 @@ border:solid 1px #999;
 background:#ccc;
 height:25px;
 width:200px;
-margin:0;padding:0;
+margin:0;
+padding:0;
 margin-left:10px;
 }
+
+
+#stylized input[type="password"] 
+{
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #999;
+width:200px;
+height:20px;
+line-height:18px;
+margin:2px 0 20px 10px;
+}
+
+#stylized input[type="text"] 
+{
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #999;
+width:200px;
+height:20px;
+line-height:18px;
+margin:2px 0 20px 10px;
+}
+
+
 #stylized .field{
 	height:inherit;width:100%;clear:both;border:0 solid red;
 }
@@ -136,18 +162,7 @@ margin-left:10px;
 .full_url{width:300px;}
 .updated{border:1px solid #ccc; background:#FFC;font-size:1opx;height:25px;line-height:25px;width:94%;}
 .msg_updated{width:100%;height:25px;line-height:25pxborder:1px solid #999;color:#999;}
-/*
 
-
-a {
-	color: #0099CC;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #00CCFF;
-}
-*/
 .highlight {background-color:#FF9D9D;border-bottom:#F30 1px solid;border-top:#F30 1px solid;padding: 4px 10px}
 
 /***** Main Layout ****/
@@ -173,9 +188,7 @@ div .widget-title{height:30px;}
 	font-family:Verdana, Geneva, sans-serif;
 	cursor:pointer;
 }
-input[type="text"] 
-{
-height:23px;
-line-height:23px;
-}
+
+
+
 #main_body{{font-family:Verdana, Geneva, sans-serif;}

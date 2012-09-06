@@ -62,9 +62,9 @@ function load_top_widget($user_ID){
 
   
     <link href="<?php echo plugins_url('signup-builder/css/signup-builder.css')?>" rel="stylesheet" type="text/css" />
-    <link href="<?php echo plugins_url('signup-builder/3rdparty/colorbox/colorbox/colorbox.css')?>" rel="stylesheet" type="text/css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="<?php echo plugins_url('signup-builder/3rdparty/colorbox/colorbox/jquery.colorbox.js')?>"></script>
+    <link href="<?php echo plugins_url('signup-builder/3rdparty/colorbox/colorbox/colorbox.css')?>" rel="stylesheet" type="text/css" />
     <script>
 			$(document).ready(function(){
 				$(".callbacks").colorbox({
@@ -108,7 +108,7 @@ $floater .= '<span style="color:#eee">' . $salute . '</span> <span style="color:
  
 if( $current_user->ID == 0){ 
 
-if( get_option('sb_show_value') =="page"){ 
+if( get_option('sb_show_value') =="page" or get_option('sb_show_value') == ""){ 
 
 $floater .= '<span class="open">
                  <a id="open_1"  href="<?php echo urldecode($permalink); ?>" >LogIn | Signup</a>
@@ -198,7 +198,11 @@ function install_signup_builder()
 			//check if post space exist if not add new post and store data
 			check_create_post();
 			
+			//default email
 			create_email_message();
+			
+			//default color
+			sb_default_menu();
 			
 	}
 	
@@ -330,8 +334,10 @@ function show_signup(){
     
     
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- -->
 <script src="<?php echo plugins_url( 'signup-builder/3rdparty/farbtastic/farbtastic.js' ); ?>"></script>
-<link href="<?php echo plugins_url('signup-builder/3rdparty/farbtastic/farbtastic.css')?>" rel="stylesheet" type="text/css" />  
+<link href="<?php echo plugins_url('signup-builder/3rdparty/farbtastic/farbtastic.css')?>" rel="stylesheet" type="text/css" /> 
+ 
     
 <script>
 	
@@ -401,11 +407,11 @@ background:#eee;
 .textarea_email{
 	border:1px solid #999; width:95%;
 }
-label {font-size:11px;color:#999;}
+wrap label {font-size:11px;color:#999;}
 
 .hide{display:none;}
 .show{display:block;}
-textarea{font-size:11px;color:#999; height:100px}
+.wrap textarea{font-size:11px;color:#999; height:100px}
 </style>
 <script>
 function hide_show(thisa){
@@ -418,7 +424,7 @@ function hide_show(thisa){
 }
 </script>
 
-<h3>Registration Type</h3>  
+<h3>Registration Type</h3>
     	<div class="tablenav" style="height:240px;width:95%">
         
 			<form method="post" action="" id="reg_type" name="reg_type">
@@ -502,7 +508,7 @@ function hide_show(thisa){
 			<form method="post" action="" id="floating_menu" name="floating_menu">
             <input type="hidden" value="floating_menu" id="action" name="action" />
             <input type="hidden" value="<?php echo $user_ID?>" id="user_id" name="user_id" />
-            <table class="widefat post fixed" cellspacing="0">
+            <table class=" widefat post fixed " cellspacing="0">
             	<thead>
                     <tr>
                         <th ><label>&nbsp;&nbsp;Top Left</label></th>
@@ -593,10 +599,10 @@ function hide_show(thisa){
 						//$checked = get_user_meta($user_ID, $meta_key, true);
 						$checked = get_option( $meta_key );
 
-						if($checked == "top" || $checked == ""){
-						   $checked_top = "checked='checked'";
+						if($checked == "page" || $checked == ""){
+						   $checked_page = "checked='checked'";
 						}else{
-							$checked_page = "checked='checked'";						
+							$checked_top = "checked='checked'";						
 						}
 						?>
                         <th>

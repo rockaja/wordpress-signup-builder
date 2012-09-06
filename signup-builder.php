@@ -5,8 +5,8 @@
  */
 /*
 Plugin Name: Signup Builder
-Plugin URI: http://wordpress.org/extend/plugins/account-builder/
-Description: Customizable frontend wordpress controls!.
+Plugin URI: http://wordpress.org/extend/plugins/signup-builder/
+Description: Build a customized frontend signup form for your wordpress site.
 Author:Ola Apata
 Author URI: http://fb-520.com
 Version: 1.0
@@ -51,10 +51,11 @@ function load_scripts(){
 	
 	// wp_enqueue_script('jquery');
 	 wp_deregister_script( 'jquery' );
-     wp_enqueue_script('signup-builder-cb-js', '/wp-content/plugins/signup-builder/colorbox/colorbox/jquery.colorbox.js');	 
-	 wp_enqueue_style( 'signup-builder-css', '/wp-content/plugins/signup-builder/css/signup-builder.css');
-	 wp_enqueue_style( 'signup-builder-cb-css', plugins_url( 'signup-builder/3rdparty/colorbox/colorbox/colorbox.css' ) );
-	 wp_enqueue_script('jquery');	
+     wp_deregister_script('farbtastic');	 
+	// wp_enqueue_style( 'signup-builder-css', '/wp-content/plugins/signup-builder/css/signup-builder.css');
+	// wp_enqueue_style( 'signup-builder-cb-css', plugins_url( 'signup-builder/3rdparty/colorbox/colorbox/colorbox.css' ) );
+	 wp_enqueue_script('jquery');
+	 //wp_enqueue_script('farbtastic');	
 	  
 	 	 
 }

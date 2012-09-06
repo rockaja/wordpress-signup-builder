@@ -1,14 +1,18 @@
 <?php
 
-if($_POST["action"] == "add"){add_action("init", "sb_add");}
+if($_REQUEST["action"] == "add"){add_action("init", "sb_add");}
 if($_REQUEST["action"] == "delete"){add_action("init", "sb_delete");}
 if($_REQUEST["action"] == "order"){add_action("init", "sb_order");}
 if($_REQUEST["action"] == "auth_type"){add_action("init", "sb_auth_type");}
+if (file_exists(dirname(__FILE__) .  "/signup-builder-p.php") ){
 if($_REQUEST["action"] == "auth_type"){add_action("init", "sb_auth_type_premium");}
+}
 if($_REQUEST["action"] == "top_widget"){add_action("init", "sb_top_widget");}
 if($_REQUEST["action"] == "restore_default_email"){add_action("init", "create_email_message");}
 if($_REQUEST["action"] == "floating_menu"){add_action("init", "sb_align_widget");}
+if (file_exists(dirname(__FILE__) .  "/signup-builder-p.php") ){
 if($_REQUEST["action"] == "floating_menu"){add_action("init", "sb_align_widget_premium");}
+}
 if($_REQUEST["action"] == "restore_default_menu"){add_action("init", "sb_default_menu");}
 
 function sb_add(){
@@ -66,8 +70,9 @@ function sb_default_menu(){
 	global $update_message;
 	update_option('sb_menu_bg', '#999');
 	update_option('sb_menu_text', '#eee');
-	
+	if($_REQUEST["action"]){
 	$update_message = 'Floating menu set to default';
+	}
 }
 
 

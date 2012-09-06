@@ -1,9 +1,10 @@
 === Plugin Name ===
 Contributors: rockaja
-Donate link: http://fb-520.com/
-Tags: signup, registration, login, signon
-Requires at least: 2.0.2
-Tested up to: 3.1
+Author URI: http://www.fb-520.com
+Donate link: http://fb-520.com
+Requires at Least: 3.0
+Tested Up To: 3.3
+Tags: template, theme, rate, rating, tool, wordpress, wordpress.org
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -48,5 +49,3 @@ This version fixes a security related bug.  Upgrade immediately.
 
 
 By Ola Apata [fb-520.com](http://fb-520.com/ "Social Media made easy") .
-
-`<?php code(); // goes in backticks ?>`
